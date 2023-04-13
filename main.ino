@@ -1,6 +1,6 @@
 //Por Luis Daniel B.
 //Librerias obtenidas a travez de Arduino CC
-//Adafruit RTClib
+//Es necesario instalar las librerias de Adafruit RTClib atravez del IDE Arduino
 //LiquidCrystal 1.07
 #include <LiquidCrystal.h>
 #include <RTClib.h>
@@ -11,6 +11,7 @@ LiquidCrystal lcd(12, 11, 5, 4, 3, 2);//Pines del LCD
 const int trigPin = 6; // Pin del trigger del sensor ultrasónico
 const int echoPin = 7; // Pin del echo del sensor ultrasónico
 
+// Función que se ejecuta solo una vez al inicio 
 void setup() {
   lcd.begin(16, 2);
   rtc.begin();
